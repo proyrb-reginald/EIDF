@@ -48,11 +48,11 @@ EIDF/
 ├── mid/                    # 中间件源码
 │   ├── freertos/           # FreeRTOS源码
 │   ├── littlefs/           # LittleFS源码
-│   ├── log/                # 定制的线程安全的日志打印接口
 │   └── lvgl/               # LVGL源码
 ├── user/                   # 用户级代码配置
 │   ├── fs/                 # 提供基于LittleFS的基础文件操作
 │   ├── gui/                # 提供GUI专用任务
+│   ├── log/                # 高度灵活的线程安全的日志打印接口
 │   ├── os/                 # 提供基于FreeRTOS的任务监控接口
 │   ├── init.c              # 提供片内设备初始化
 │   ├── init.h
