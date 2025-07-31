@@ -70,4 +70,4 @@ eidf/
 
 ## 如何使用
 
-请参考本项目的[Wiki](https://gitee.com/proyrb/eidf/wikis)页面。
+请参考本项目的[Wiki](https://github.com/proyrb-reginald/EIDF/wiki)页面。
