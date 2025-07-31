@@ -1694,6 +1694,11 @@
               <FileType>1</FileType>
               <FilePath>..\user\main.c</FilePath>
             </File>
+            <File>
+              <FileName>user.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\user.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
