@@ -1,10 +1,10 @@
 # EIDF
 
-## 项目全称
+## 一、项目全称
 
 嵌入式集成开发框架（Embedded Integrated Development Framework）
 
-## 项目简介
+## 二、项目简介
 
 - 基于**赛元微**的**SC32R803**系列芯片。
 - 集成多种模块驱动：
@@ -27,7 +27,7 @@
     - 导入精美的界面设计，提供轻量且健全的人机交互方式，对人机交互场景格外友好
   - [ ] 支持网络通讯
 
-## 结构说明
+## 三、结构说明
 
 下面是项目的结构，**只对主要条目进行介绍**。
 
@@ -58,8 +58,10 @@ EIDF/
 │   ├── init.h
 │   ├── irq.c               # 中断处理函数
 │   ├── irq.h
-│   ├── main.c              # 用户级别的顶层设计
-│   └── main.h
+│   ├── main.c              # 启动流程
+│   ├── main.c
+│   ├── user.c              # 用户级别的顶层设计
+│   └── user.h
 ├── .clang-format           # 格式化配置信息
 ├── .eide.usr.ctx.json
 ├── .gitignore              # 仓库忽略清单
@@ -68,6 +70,6 @@ EIDF/
 └── README.md
 ```
 
-## 如何使用
+## 四、如何使用
 
 请参考本项目的[Wiki](https://github.com/proyrb-reginald/EIDF/wiki)页面。
