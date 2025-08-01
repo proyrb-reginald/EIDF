@@ -216,7 +216,7 @@
       "uploader": "Custom",
       "uploadConfig": {
         "bin": "",
-        "commandLine": "C:\\Users\\proyr\\AppData\\Local\\Keil_v5\\UV4\\UV4.exe -p \"c:\\Users\\proyr\\Documents\\Gitee\\eidf\\.keil\\eidf.uvprojx\" -f",
+        "commandLine": "UV4 -p \"./.keil/eidf.uvprojx\" -f",
         "eraseChipCommand": ""
       },
       "uploadConfigMap": {

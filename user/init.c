@@ -1,13 +1,10 @@
 #include "init.h"
 
 void rcc_init(void) {
-    // 解锁RCC寄存器
     if (RCC_Unlock(0xFF) != SUCCESS) {
-        while (1)
-            ;  // 解锁失败，进入死循环
+        while (1) {}
     }
 
-    // 配置系统时钟树
     RCC_ITConfig(DISABLE);
     RCC_HXTCmd(DISABLE);
     RCC_LXTCmd(DISABLE);
@@ -16,20 +13,15 @@ void rcc_init(void) {
     RCC_HIRCDIV1Cmd(ENABLE);
     RCC_HCLKConfig(RCC_SYSCLK_Div1);
 
-    // 切换系统时钟源至HIRC
     if (RCC_SYSCLKConfig(RCC_SYSCLKSource_HIRC) != SUCCESS) {
-        while (1)
-            ;  // 切换失败，进入死循环
+        while (1) {}
     }
 
-    // 配置APB0时钟
     RCC_APB0Config(RCC_HCLK_Div1);
     RCC_APB0Cmd(ENABLE);
 
-    // 配置串口
     uart_5_init();
 
-    // 打印信息
     printf("switch system clock to HIRC done!\n");
 }
 
